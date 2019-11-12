@@ -1,0 +1,25 @@
+{
+    "conf1": {
+        "2019-07-05": {
+            "StartTime": "15:00",
+            "EndTime": "17:00",
+            "duration": "PT2H"
+        }
+    },
+    "conf2": {
+        "2019-07-05": {
+            "StartTime": "15:00",
+            "EndTime": "17:00",
+            "duration": "PT2H",
+            "userid": "amzn1.ask.account.AHRTH7OTQ7WI2XF5ZBWS2K5BJGIDH4IEEMIHYLJDGTTUG3WXBEPE5YZBAGOC6SPYTFOHKY7A4XQLG2NAROB5PWHI2F67QQDGS3X7UC7K5KLZAGHJFWQH2FKHTKZTLQQNYQLSM6CZREEB7WWNP3DKD2PCTORKI4QUV7P223B65EMZUF7II77JEOHVC6F3QUQDSUWUPNBYDFMFGMQ"
+        }
+    },
+    "conf3": {
+        "2019-07-05": {
+            "StartTime": "15:00",
+            "EndTime": "17:00",
+            "duration": "PT2H",
+            "userid": "amzn1.ask.account.AHRTH7OTQ7WI2XF5ZBWS2K5BJGIDH4IEEMIHYLJDGTTUG3WXBEPE5YZBAGOC6SPYTFOHKY7A4XQLG2NAROB5PWHI2F67QQDGS3X7UC7K5KLZAGHJFWQH2FKHTKZTLQQNYQLSM6CZREEB7WWNP3DKD2PCTORKI4QUV7P223B65EMZUF7II77JEOHVC6F3QUQDSUWUPNBYDFMFGMQ"
+        }
+    }
+}

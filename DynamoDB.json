@@ -1,0 +1,317 @@
+{
+    {
+    "names": {
+      "L": [
+        {
+          "S": "boardroom"
+        },
+        {
+          "S": "board room"
+        }
+      ]
+    },
+    "room": {
+      "S": "boardRoom"
+    },
+    "slots": {
+      "L": [
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-05"
+            },
+            "endTime": {
+              "S": "14:00"
+            },
+            "startTime": {
+              "S": "12:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-05"
+            },
+            "endTime": {
+              "S": "16:00"
+            },
+            "startTime": {
+              "S": "15:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-12"
+            },
+            "endTime": {
+              "S": "21:00"
+            },
+            "startTime": {
+              "S": "20:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-12"
+            },
+            "endTime": {
+              "S": "16:00"
+            },
+            "startTime": {
+              "S": "14:00"
+            }
+          }
+        }
+      ]
+    }
+  }
+
+  {
+    "names": {
+      "L": [
+        {
+          "S": "conference room 1"
+        },
+        {
+          "S": "conference 1"
+        },
+        {
+          "S": "conf 1"
+        },
+        {
+          "S": "conf room 1"
+        },
+        {
+          "S": "conference room one"
+        },
+        {
+          "S": "conference one"
+        },
+        {
+          "S": "conf one"
+        },
+        {
+          "S": "conf room one"
+        }
+      ]
+    },
+    "room": {
+      "S": "conf1"
+    },
+    "slots": {
+      "L": [
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-05"
+            },
+            "endTime": {
+              "S": "16:00"
+            },
+            "startTime": {
+              "S": "15:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-12"
+            },
+            "endTime": {
+              "S": "10:00"
+            },
+            "startTime": {
+              "S": "08:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-12"
+            },
+            "endTime": {
+              "S": "23:00"
+            },
+            "startTime": {
+              "S": "20:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-13"
+            },
+            "endTime": {
+              "S": "10:00"
+            },
+            "startTime": {
+              "S": "08:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-12"
+            },
+            "endTime": {
+              "S": "20:00"
+            },
+            "startTime": {
+              "S": "16:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-15"
+            },
+            "endTime": {
+              "S": "20:00"
+            },
+            "startTime": {
+              "S": "19:00"
+            }
+          }
+        }
+      ]
+    }
+  }
+  {
+    "names": {
+      "L": [
+        {
+          "S": "conference room 2"
+        },
+        {
+          "S": "conference 2"
+        },
+        {
+          "S": "conf 2"
+        },
+        {
+          "S": "conf room 2"
+        },
+        {
+          "S": "conference room two"
+        },
+        {
+          "S": "conference two"
+        },
+        {
+          "S": "conf two"
+        },
+        {
+          "S": "conf room two"
+        }
+      ]
+    },
+    "room": {
+      "S": "conf2"
+    },
+    "slots": {
+      "L": [
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-05"
+            },
+            "endTime": {
+              "S": "16:00"
+            },
+            "startTime": {
+              "S": "15:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-11"
+            },
+            "endTime": {
+              "S": "21:00"
+            },
+            "startTime": {
+              "S": "19:00"
+            }
+          }
+        },
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-13"
+            },
+            "endTime": {
+              "S": "10:00"
+            },
+            "startTime": {
+              "S": "08:00"
+            }
+          }
+        }
+      ]
+    }
+  }
+
+  {
+    "names": {
+      "L": [
+        {
+          "S": "conference room 3"
+        },
+        {
+          "S": "conference 3"
+        },
+        {
+          "S": "conf 3"
+        },
+        {
+          "S": "conf room 3"
+        },
+        {
+          "S": "conference room three"
+        },
+        {
+          "S": "conference three"
+        },
+        {
+          "S": "conf three"
+        },
+        {
+          "S": "conf room three"
+        }
+      ]
+    },
+    "room": {
+      "S": "conf3"
+    },
+    "slots": {
+      "L": [
+        {
+          "M": {
+            "date": {
+              "S": "2019-07-05"
+            },
+            "endTime": {
+              "S": "16:00"
+            },
+            "startTime": {
+              "S": "15:00"
+            }
+          }
+        }
+      ]
+    }
+  }
+
+}

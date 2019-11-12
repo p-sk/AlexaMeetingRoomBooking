@@ -1,0 +1,296 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bot",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help",
+                        "how to book a room",
+                        "how can we use it"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BookRoom",
+                    "slots": [
+                        {
+                            "name": "room",
+                            "type": "AMAZON.Room",
+                            "samples": [
+                                "{room}"
+                            ]
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "samples": [
+                                "{time} {date}",
+                                "{date} {time}",
+                                "{date}"
+                            ]
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "{time}"
+                            ]
+                        },
+                        {
+                            "name": "duration",
+                            "type": "AMAZON.DURATION",
+                            "samples": [
+                                "{duration}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "from {time}",
+                        "{time}",
+                        "ok I want to book {room}",
+                        "{duration} ",
+                        "from {time}  {date}",
+                        "from {date}",
+                        "{room}",
+                        "book {room} from {date}  {time} for {duration}",
+                        "book {room} from {time} {date} for {duration}",
+                        "book a meeting room",
+                        "can you book room",
+                        "kindly book a room",
+                        "book {room}  for {date} ",
+                        "book {room}  for {duration}",
+                        "book {room}",
+                        "Book a room"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.Room",
+                    "values": [
+                        {
+                            "id": "conf1",
+                            "name": {
+                                "value": "conf1",
+                                "synonyms": [
+                                    "conf 1",
+                                    "conference room 3",
+                                    "conference 3"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "boardRoom",
+                            "name": {
+                                "value": "boardRoom",
+                                "synonyms": [
+                                    "Board room"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "conf2",
+                            "name": {
+                                "value": "conf2",
+                                "synonyms": [
+                                    "conf 2",
+                                    "conference  room 2",
+                                    "conference 2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "conf3",
+                            "name": {
+                                "value": "conf3",
+                                "synonyms": [
+                                    "conference 3",
+                                    "conference room 3",
+                                    "conf 3"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "BookRoom",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "room",
+                            "type": "AMAZON.Room",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1506967118219.1080724103370"
+                            }
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1506967118219.751782349430"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isInDuration",
+                                    "prompt": "Slot.Validation.383711591379.9180792072.1057462992020",
+                                    "start": "P0D",
+                                    "end": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1506967118219.988139738217"
+                            }
+                        },
+                        {
+                            "name": "duration",
+                            "type": "AMAZON.DURATION",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1506967118219.991186695622"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1506967118219.1080724103370",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which room You want to Book ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1506967118219.751782349430",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "When is this meeting ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1506967118219.988139738217",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "From what time you want to book ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1506967118219.991186695622",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How long you required this room ?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1506967118219",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "OK You want to book {Room}  from {date} {time} for {duration} . Kindly confrom "
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.383711591379.9180792072.1057462992020",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "As it seens its past date, Kindly provide the future date ?"
+                    }
+                ]
+            }
+        ]
+    }
+}

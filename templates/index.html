@@ -1,0 +1,22 @@
+{% extends 'header.html' %}
+{% block body%}
+</br></br></br></br>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+  
+  <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading"><H1>Welcome</H1></div>
+    <div class="panel-body">
+<H3>{{user.first_name }} {{user.last_name}} </H3>
+	</div>
+	</div> 	
+  <div class="col-sm-4"></div>
+</div>
+
+
+<script >
+	document.getElementById('home').className = "active";
+</script>
+{% endblock %}
